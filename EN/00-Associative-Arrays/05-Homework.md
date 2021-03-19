@@ -1809,46 +1809,44 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-The force users are struggling to remember which side are the different force users from because they switch them too often.
+The force users are struggling to remember which side they have chosen last because they switch them too often.
 
-So you are tasked to create a program to manage their profiles.
+Your task is to create a program that manages their profiles.
 
-You should store information for **every unique force user**, registered in the application.
+You should store information about **every unique force user** who is registered in the application.
 
-You will receive several **input lines in one of the following formats**:
+You will receive several input lines in one of the following formats:
 
 - "\{forceSide\} \| \{forceUser\}"
 - "\{forceUser\} -> \{forceSide\}"
 
-The **force user and force side are strings**, containing characters.
 
-If you receive **{force side \| force user}**, you should **check if such force user already exists**. If they do not, **add them** to the corresponding side.
+If you receive {force side \| force user}, check **if such a force user already exists**. If they do not, **add them** to the corresponding side.
 
-If you receive **{force user -> force side}**, you should **check if there is such force user already**. If they do, **change their side**. 
 
-If there is no such force user, **add them to the corresponding force side**, treating the command as new registered force user.
+If you receive {force user -> force side}, check **if there is already such a force user**. If there is, **change their side**. 
 
-Then you should print on the console: 
+If there is no such a force user, **add them to the corresponding force side**.
+
+If the command is executed successfully, print out:
 
 "\{**forceUser**\} **joins the** \{**forceSide**\} **side!**"
 
-You should **end your program when you receive the command** "**End**". 
 
-At that point you should print each force side by the **count of force users in descending order** then **ordered by name**. 
+The program ends when you receive the "**End**" command. 
 
-For each side, print the force users **ordered by name**.
-
-In case there are **no force users** on a side, you **should not print the side information**.
 
 ### Input
 
-- The input comes in the form of commands in one of the formats specified above
+- The input comes in the form of commands in one of the specified formats
 
-- The input ends when you receive the command "**End**"
+- The program stops when you receive the "**End**" command 
 
 ### Output
 
-- Print each force side by the **count of force users in descending order** then **ordered by name**
+- Print out the **names of all force sides** ordered by the count of their force users in descending order, and then by their names in ascending order
+
+- For each side, print out **the names of all force users** that participate in it, ordered by their names
 
 - The output format is:
 
@@ -1857,7 +1855,7 @@ In case there are **no force users** on a side, you **should not print the side 
 ! \{**forceUser**\}
 ! \{**forceUser**\}"
 
-- In case there are no force users, do not print the specific side
+- In case **there are not force users** who participate in the specified side, you should not print the information about this side.
 
 ### Examples
 | **Input** | **Output** |
@@ -1868,9 +1866,9 @@ In case there are **no force users** on a side, you **should not print the side 
 | | ! George |
 
 ### Comments
-We register George in the Light side and Peter in the Dark side.
+We register George in the Light side, and Peter in the Dark side.
 
-After receiving "**End**" we print both sides, ordered by the count of users and then by name.
+After receiving "**End**", we print both sides, ordered by the count of their users, and then ordered by their names.
 
 ### Examples
 | **Input** | **Output** |
@@ -1883,11 +1881,11 @@ After receiving "**End**" we print both sides, ordered by the count of users and
 | | ! Ronn |
 
 ### Comments
-Although John does not have a profile, we register him and add him to the Lighter side.
+Although John does not have a profile, we register him and we add him to the Lighter side.
 
-We remove Dean from Darker side and add him to Lighter side.
+We remove Dean from the Darker side, and we add him to Lighter side.
 
-We print only Lighter side because Darker side has no members.
+We print only the information about the Lighter side, because th Darker side has no members.
 
 [/task-description]
 [code-io /]
