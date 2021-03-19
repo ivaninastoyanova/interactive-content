@@ -924,31 +924,31 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that keeps information about some **courses**.
+Create a program, which keeps information about **courses**.
 
 Each course has a **name** and **registered students**.
 
-You will be receiving **a course name and a student name**, until you receive the "**end**" command. 
+You will receive **a course name and a student name**, **until** you receive the **command** "**end**". 
 
 **Check** if such **course already exists**, and if **not**, **add the course**. 
 
 **Register** the **user** into the **course**. 
 
-When you receive the "**end**" command, print the **names of all courses** and the **total registered users** in each one of them, ordered by the count of **registered users** in **descending** order. 
+When you do receive the **command** "**end**", **print** the courses with their **names** and **total registered users**, ordered by the count of **registered** users in descending order. 
 
-For each **course**, print **the registered users** ordered by their name in **ascending** order.
+For each **contest**, print **the registered users** ordered by **the name in ascending** order.
 
 ### Input
-- Until you receive the "**end**" command, you will be receiving input lines in the following format:
+- Until you receive "**end**", the **input come in the format**:
  "\{**courseName**\} : \{**studentName**\}".
  
-- The name of the course and the name of the student will always be separated by a **" : "**
+- The product data is **always be separated** by a **" : "**
 
 ### Output
 - Print the information about each **course** in the following **format**: 
 "\{**courseName**\}: \{**registeredStudents**\}"
 
-- Print the information about each **student** in the following **format**:
+- Print information about each **student** in the following **format**:
 "-- \{**studentName**\}"
 
 ### Examples
@@ -1191,27 +1191,25 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that keeps information about some students and their grades.
+Create a program, which keeps information about students and their grades.
 
-You will receive an integer number - **n**.
+You will receive **n** pair of rows. 
 
-Then, you will receive **2 * n** rows of input.
-
-First, you will receive the **student's name**. Аfter that, you will receive their **grade**. 
+First you will receive the **student's name**. Аfter that you will receive their **grade**. 
 
 If the **student does not exists**, **add** them. 
 
-Keep track of **all of the grades of each student**.
+Keep track of **all of the grades for each student**.
 
-When you finish reading the data, keep only the students which have an average grade **higher or equal to 4.50**. 
+When you finish reading the data, keep the students with an average grade **higher or equal to 4.50**. 
 
-Order the filtered students by their average grade in **descending** order.
+Order the filtered students by the average grade in **descending** order.
 
-Print the students and their average grade in the following format:
+**Print the students and their average grade** in the following format:
 
 - "\{**name**\} -> \{**averageGrade**\}"
 
-**Format** the average grade to the second decimal place.
+**Format** the average grade to the **second decimal** place.
 
 ### Examples
 | **Input** | **Output** |
@@ -1491,18 +1489,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that keeps information about some companies and their employees.
+Create a program, which keeps information about companies and their employees.
 
-You will be receiving **company names** and **employee ids**, until you receive the "**End**" command. 
+You will receive a **company names** and **employee ids**, until you receive the **command** "**End**". 
 
 **Add** each **employee** to the **given company**.
 
 Keep in mind that a **company cannot have two employees with the same id**.
 
-When you finish reading the data, **order** the companies by their name in **ascending** order.
+When you finish reading the data, **order** the companies by the name in **ascending** order.
 
-Print the **name of each company** and the **ids of all employees** who work in the specified company in the following format:
-
+Print the company name and each employee's id in the following format:
 
 "\{**companyName**\}
 -- \{**id1**\}
@@ -1511,7 +1508,7 @@ Print the **name of each company** and the **ids of all employees** who work in 
 
 ### Input
 
-Until you receive the "**End**" command, you will be receiving input lines **in the following format**:
+Until you receive the command "**End**", the input come **in the following format**:
 "\{**companyName**\} -> \{**employeeId**\}"
 
 ### Examples
@@ -1809,46 +1806,44 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-The force users are struggling to remember which side are the different force users from because they switch them too often.
+The force users are struggling to remember which side they have chosen last, because they switch them too often.
 
-So you are tasked to create a program to manage their profiles.
+Your task is to create a program that manages their profiles.
 
-You should store information for **every unique force user**, registered in the application.
+You should store information about **every unique force user** who is registered in the application.
 
-You will receive several **input lines in one of the following formats**:
+You will receive several input lines in one of the following formats:
 
 - "\{forceSide\} \| \{forceUser\}"
 - "\{forceUser\} -> \{forceSide\}"
 
-The **force user and force side are strings**, containing characters.
 
-If you receive **{force side \| force user}**, you should **check if such force user already exists**. If they do not, **add them** to the corresponding side.
+If you receive {force side \| force user}, check **if such force user already exists**. If they do not, **add them** to the corresponding side.
 
-If you receive **{force user -> force side}**, you should **check if there is such force user already**. If they do, **change their side**. 
 
-If there is no such force user, **add them to the corresponding force side**, treating the command as new registered force user.
+If you receive {force user -> force side}, check **if there is already such a force user**. If there is, **change their side**. 
 
-Then you should print on the console: 
+If there is no such a force user, **add them to the corresponding force side**.
+
+If the command is executed successfully, print out:
 
 "\{**forceUser**\} **joins the** \{**forceSide**\} **side!**"
 
-You should **end your program when you receive the command** "**End**". 
 
-At that point you should print each force side by the **count of force users in descending order** then **ordered by name**. 
+The program ends when you receive the "**End**" command. 
 
-For each side, print the force users **ordered by name**.
-
-In case there are **no force users** on a side, you **should not print the side information**.
 
 ### Input
 
-- The input comes in the form of commands in one of the formats specified above
+- The input comes in the form of commands in one of the specified formats
 
-- The input ends when you receive the command "**End**"
+- The program stops when you receive the "**End**" command 
 
 ### Output
 
-- Print each force side by the **count of force users in descending order** then **ordered by name**
+- Print out the **names of all force sides** ordered by the count of their force users in descending order, and then by their names in ascending order
+
+- For each side, print out **the names of all force users** that participate in it, ordered by their names
 
 - The output format is:
 
@@ -1857,7 +1852,7 @@ In case there are **no force users** on a side, you **should not print the side 
 ! \{**forceUser**\}
 ! \{**forceUser**\}"
 
-- In case there are no force users, do not print the specific side
+- In case **there are not force users** who participate in the specified side, you should not print the information about this side.
 
 ### Examples
 | **Input** | **Output** |
@@ -1868,9 +1863,9 @@ In case there are **no force users** on a side, you **should not print the side 
 | | ! George |
 
 ### Comments
-We register George in the Light side and Peter in the Dark side.
+We register George in the Light side, and Peter in the Dark side.
 
-After receiving "**End**" we print both sides, ordered by the count of users and then by name.
+After receiving "**End**", we print both sides, ordered by the count of their users, and then ordered by their names.
 
 ### Examples
 | **Input** | **Output** |
@@ -1883,11 +1878,11 @@ After receiving "**End**" we print both sides, ordered by the count of users and
 | | ! Ronn |
 
 ### Comments
-Although John does not have a profile, we register him and add him to the Lighter side.
+Although John does not have a profile, we register him and we add him to the Lighter side.
 
-We remove Dean from Darker side and add him to Lighter side.
+We remove Dean from the Darker side, and we add him to Lighter side.
 
-We print only Lighter side because Darker side has no members.
+We print only the information about the Lighter side, because th Darker side has no members.
 
 [/task-description]
 [code-io /]
