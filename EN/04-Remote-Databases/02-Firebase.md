@@ -31,7 +31,7 @@ Create a new project by clicking on either "**Add project**" or "**Create a proj
 
 Type in a project **name**, for example "**TestApp**", and click "**Continue**".
 
-[image assetsSrc="Remote-Databases(3).png" /]
+[image assetsSrc="Remote-Databases(3).png" /] 
 
 **Disable Google Analytics** as you will not need them for now.
 
